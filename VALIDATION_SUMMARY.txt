@@ -1,0 +1,53 @@
+VALIDATION SUMMARY
+==================
+
+Installation result: PASS
+- Clean repository copy installed in a new CPython 3.13.5 virtual environment.
+- Runtime, test, and build dependencies installed from requirements.txt and requirements-dev.txt.
+- Editable package installation completed successfully.
+- pip check reported no broken requirements.
+- The clean-install check exposed a missing explicit setuptools dependency; requirements-dev.txt was corrected and the final installation passed.
+
+Tests: PASS
+- Command: python -m pytest
+- Result: 25 passed, 0 failed, 0 skipped.
+- Coverage includes state encoding and decoding, collision, streaming, inverse evolution, time-reversal conjugacy, sector enumeration, predictive partition counts, all 54 ambiguous states, 18 least-period-three cycles, nine reversal pairs, collision-free structure, certificate completeness, figure consistency, and integrity-manifest consistency.
+
+Exact-data validation: PASS
+- Sector states: 9,153.
+- Predictive singletons: 9,099.
+- Predictive doubletons: 27.
+- Ambiguous states: 54.
+- Period-three microscopic cycles: 18.
+- Time-reversal pairs: 9.
+- All previously committed numerical studies outside the expanded HPP certificate and paired-cycle figure reproduced byte-for-byte.
+
+Independent certificate result: PASS
+- The self-contained verifier reconstructed the sector and stable predictive partition from low-level HPP definitions.
+- It confirmed all certificate rows, state constraints, successors, predecessors, least periods, collision counts, reversal partners, phase alignment, and uniqueness of every nonexceptional state.
+
+Clean-regeneration result: PASS
+- Every deterministic CSV and PNG was regenerated from a clean copy in a temporary data tree.
+- Committed CSV files matched byte-for-byte.
+- Committed PNG files matched by dimensions and pixel comparison after metadata inspection.
+
+Manuscript build result: PASS
+- exact_and_near_recurrence.tex compiled twice with pdfTeX 1.40.26 / TeX Live 2025.
+- Final manuscript: 15 pages.
+- The clean-copy PDF was byte-identical to the working-copy PDF.
+- All manuscript figures were rebuilt from committed scientific data.
+
+Metadata and privacy inspection: PASS
+- PDF authoring metadata fields are empty and no metadata stream is present.
+- PNG files contain no text metadata.
+- Markdown links and LaTeX figure paths resolve.
+- No local absolute paths, credentials, secrets, temporary files, nested archives, document comments, or prohibited authoring references were found.
+- The release archive contains no repository history, virtual environment, caches, compiled Python files, or ZIP comment.
+
+GitHub-release status
+- Software is licensed under Apache-2.0.
+- The manuscript, documentation, figures, and generated data are licensed under CC-BY-4.0.
+- LICENSE.md defines the scope of each license and the attribution requirements.
+- Routine CI runs fast scientific and repository checks; full clean regeneration is isolated in a manual and release-triggered workflow with a 90-minute timeout.
+- CITATION.cff uses the author already present in the project.
+- No DOI, institution, affiliation, funding source, email address, publication status, or repository URL is claimed.
