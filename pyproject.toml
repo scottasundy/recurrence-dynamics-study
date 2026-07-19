@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "recurrence-dynamics"
-version = "2.1.1"
-description = "Exact predictive quotients, observability, and recurrence in deterministic dynamics"
+version = "2.2.0"
+description = "Framework for recurrence, predictive observability, and hidden-state ambiguity in deterministic dynamics"
 readme = "README.md"
 license = "Apache-2.0"
 license-files = ["LICENSES/Apache-2.0.txt"]

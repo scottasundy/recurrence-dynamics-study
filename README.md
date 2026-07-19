@@ -1,10 +1,26 @@
-# Predictive State Quotients and Recurrence
+# Recurrence Dynamics Framework
 
-This repository studies exact recurrence and state reconstruction under incomplete observation. Its main question is:
+This repository develops a reproducible framework for recurrence, predictive observability, hidden-state ambiguity, and predictive equivalence in deterministic dynamical systems. Its main question is:
 
-> When does an observation contain enough information to determine the complete future of a deterministic system?
+> When does an observation contain enough information to determine the complete future of a system?
 
-A repeated complete state fixes the subsequent future. A repeated density field, image, conserved quantity, or position snapshot may not. The project combines analytical results, exhaustive finite-state enumeration, and reproducible numerical examples for reversible cellular automata, lattice gases, exact hard-particle dynamics, irrational torus flow, Poincare recurrence, and quantum recurrence.
+A repeated complete state fixes the subsequent future. A repeated density field, image, conserved quantity, or position snapshot may not. The framework separates complete-state recurrence, observational recurrence, finite-horizon agreement, predictive equivalence, permanent ambiguity, and near recurrence under explicitly declared observation maps.
+
+The exact benchmark is an exhaustive analysis of the four-particle, zero-momentum sector of a reversible `3x3` HPP lattice gas under site-density observation. The repository also contains analytical results and reproducible examples for reversible cellular automata, lattice gases, exact hard-particle dynamics, irrational torus flow, Poincare recurrence, and quantum recurrence.
+
+## Framework
+
+The reusable protocol is documented in [`docs/recurrence_dynamics_framework.md`](docs/recurrence_dynamics_framework.md). It defines:
+
+- the complete state, update map, analyzed sector, observation map, and diagnostic horizon;
+- exact and finite-horizon equivalence relations;
+- a recurrence and ambiguity classification system;
+- finite-state partition refinement and stabilization;
+- symmetry and time-reversal diagnostics;
+- required reporting outputs and evidence levels;
+- scoped extension procedures for AI systems, robotics, sensors, coarse-grained physics, model discrimination, and quantum diagnostics.
+
+The finite HPP classification is the exact worked benchmark for the broader framework. Extensions to continuous, stochastic, sampled, or quantum systems require their own assumptions and do not automatically inherit the finite exhaustive guarantees.
 
 ## Principal HPP result
 
@@ -45,6 +61,7 @@ The analytical theorem explains the mechanism. The exhaustive computation discov
 - [`paper/exact_and_near_recurrence.tex`](paper/exact_and_near_recurrence.tex) - manuscript source.
 - [`paper/exact_and_near_recurrence.pdf`](paper/exact_and_near_recurrence.pdf) - compiled manuscript.
 - [`docs/mathematical_framework.md`](docs/mathematical_framework.md) - definitions and theorem summary.
+- [`docs/recurrence_dynamics_framework.md`](docs/recurrence_dynamics_framework.md) - reusable diagnostic protocol, classifications, outputs, and extension rules.
 - [`docs/reproducibility.md`](docs/reproducibility.md) - detailed reproducibility procedure.
 - [`MANIFEST.sha256`](MANIFEST.sha256) - integrity manifest for committed files.
 - [`LICENSE.md`](LICENSE.md) - split-license scope and attribution terms.
@@ -234,7 +251,7 @@ The exhaustive HPP claim is computer-assisted but finite and exact: every state 
 
 ## Citation
 
-Citation metadata are provided in [`CITATION.cff`](CITATION.cff). No DOI or publication status is claimed.
+GitHub citation metadata are provided in [`CITATION.cff`](CITATION.cff), and Zenodo release metadata are provided in [`.zenodo.json`](.zenodo.json). No DOI is hard-coded in the source archive; add the DOI assigned to the published Zenodo version when available.
 
 ## License
 

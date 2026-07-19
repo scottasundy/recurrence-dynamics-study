@@ -1,0 +1,27 @@
+{
+  "title": "Recurrence Dynamics Framework: Predictive State Quotients and Hidden-State Ambiguity",
+  "version": "2.2.0",
+  "publication_date": "2026-07-19",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "apache-2.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Sundy, Scott A."
+    }
+  ],
+  "description": "<p>This release presents the <strong>Recurrence Dynamics Framework</strong>, a reproducible method for analyzing complete-state recurrence, observational recurrence, predictive equivalence, finite observability, hidden-state ambiguity, and near recurrence in deterministic dynamical systems.</p><p>The framework distinguishes equality of complete predictive states from equality of reduced observations and provides an exact partition-refinement procedure for finite systems. It classifies temporary observational ambiguity, delayed divergence, permanent predictive equivalence, exact recurrence, and near recurrence under explicitly defined observation maps.</p><p>The reference benchmark is an exhaustive study of the four-particle, zero-momentum sector of a reversible 3x3 Hardy-Pomeau-de Pazzis lattice gas under sitewise-density observation. The sector contains 9,153 microscopic states and stabilizes at 9,126 predictive classes. Of these, 27 are doubletons containing 54 distinct microscopic states. The exceptional states form 18 collision-free period-three cycles arranged into nine time-reversal-related orbit pairs.</p><p>The release includes the mathematical formulation, reproducible code, independent verification procedures, exact state catalogs, and a general framework document for applying the method to additional dynamical systems. The finite HPP result is the exact benchmark; extensions to continuous, stochastic, sampled, or quantum systems require separate assumptions. The framework does not claim that the universe is finite, that physical reality exactly recurs, or that observational ambiguity proves unknown physical variables or quantum hidden-variable theories.</p><p>Software is licensed under Apache-2.0. The manuscript, documentation, figures, and generated scientific data are licensed under CC-BY-4.0 as specified in LICENSE.md.</p>",
+  "keywords": [
+    "recurrence dynamics",
+    "predictive equivalence",
+    "observability",
+    "hidden-state ambiguity",
+    "reversible dynamics",
+    "coarse-graining",
+    "finite-state systems",
+    "HPP lattice gas",
+    "partition refinement",
+    "computational physics"
+  ]
+}

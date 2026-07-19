@@ -20,6 +20,7 @@ TEXT_SUFFIXES = {
     ".yml",
     ".yaml",
     ".cff",
+    ".json",
     ".gitignore",
     ".gitattributes",
 }
@@ -140,6 +141,8 @@ def validate_release_hygiene(files: list[Path]) -> None:
         "LICENSES/Apache-2.0.txt",
         "LICENSES/CC-BY-4.0.txt",
         "CITATION.cff",
+        ".zenodo.json",
+        "docs/recurrence_dynamics_framework.md",
         "CONTRIBUTING.md",
         "CHANGELOG.md",
         "requirements.txt",

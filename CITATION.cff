@@ -1,12 +1,32 @@
 cff-version: 1.2.0
 message: "Please cite this repository and its accompanying manuscript."
-title: "Predictive State Quotients and Irreducible Hidden-State Ambiguity in Reversible Dynamics"
+title: "Recurrence Dynamics Framework: Predictive State Quotients and Hidden-State Ambiguity"
 type: software
 authors:
   - family-names: Sundy
     given-names: Scott A.
-version: 2.1.1
+version: 2.2.0
 date-released: 2026-07-19
+abstract: >-
+  A reproducible framework for distinguishing complete-state recurrence,
+  observational recurrence, finite-horizon agreement, predictive equivalence,
+  permanent hidden-state ambiguity, and near recurrence in deterministic
+  dynamical systems. The exact benchmark exhaustively analyzes 9,153 states in
+  the four-particle, zero-momentum sector of a reversible 3x3 HPP lattice gas
+  under site-density observation, yielding 9,126 predictive classes, including
+  27 doubletons containing 54 ambiguous microscopic states organized into 18
+  period-three cycles and nine time-reversal-related orbit pairs.
+keywords:
+  - recurrence dynamics
+  - predictive equivalence
+  - observability
+  - hidden-state ambiguity
+  - reversible dynamics
+  - coarse-graining
+  - finite-state systems
+  - HPP lattice gas
+  - partition refinement
+  - computational physics
 preferred-citation:
   type: article
   title: "Predictive State Quotients and Irreducible Hidden-State Ambiguity in Reversible Dynamics"

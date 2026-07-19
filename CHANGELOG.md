@@ -1,5 +1,13 @@
 # Change log
 
+## 2.2.0 - 2026-07-19
+
+- Added the Recurrence Dynamics Framework as a reusable protocol for predictive observability, recurrence classification, hidden-state ambiguity, and predictive equivalence.
+- Repositioned the repository description around the general framework while retaining the exhaustive HPP classification as the exact benchmark.
+- Added explicit application protocols, reporting standards, evidence levels, nonclaims, and scoped extensions for AI systems, robotics, sensors, coarse-grained physics, model discrimination, and quantum diagnostics.
+- Added Zenodo-native release metadata in `.zenodo.json` and expanded `CITATION.cff` with the framework title, abstract, keywords, and version metadata.
+- Updated the package description, repository contents, citation guidance, release validation requirements, and integrity manifest.
+
 ## 2.1.1 - 2026-07-19
 
 - Replaced the all-rights-reserved notice with a split open licensing structure: Apache-2.0 for software and CC-BY-4.0 for scientific content.

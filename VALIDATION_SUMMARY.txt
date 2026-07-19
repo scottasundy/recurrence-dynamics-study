@@ -8,6 +8,17 @@ Installation result: PASS
 - pip check reported no broken requirements.
 - The clean-install check exposed a missing explicit setuptools dependency; requirements-dev.txt was corrected and the final installation passed.
 
+Framework and release-metadata update: PASS
+- Release version updated to 2.2.0.
+- Added docs/recurrence_dynamics_framework.md as the reusable recurrence, observability, predictive-equivalence, and hidden-state ambiguity protocol.
+- Updated README.md, CITATION.cff, CHANGELOG.md, and pyproject.toml to describe the framework and retain the exhaustive HPP result as the exact benchmark.
+- Added .zenodo.json with Zenodo-native title, creator, description, license, version, access, language, and keyword metadata.
+- Updated repository validation to require both the framework document and Zenodo metadata file.
+- Zenodo metadata parsed as valid JSON; citation metadata parsed as valid YAML.
+- Repository link, privacy, metadata, and release-hygiene validation passed after the update.
+- The independent HPP verifier and exact-data validation passed without changes to the reported scientific counts.
+- The manuscript rebuilt successfully and was byte-identical to the previously committed PDF.
+
 Tests: PASS
 - Command: python -m pytest
 - Result: 25 passed, 0 failed, 0 skipped.
